@@ -15,7 +15,8 @@ body
 {
     padding: 0px 50px;
     /* background-color: #1a1926; */
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
+    background-color: #f3f3f3;
 }
 
 header
@@ -62,7 +63,7 @@ header
 .nav-menu
 {
     display: flex;
-    gap: 30px;
+    gap: 40px;
     /* background-color: aquamarine; */
 }
 

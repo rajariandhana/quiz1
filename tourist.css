@@ -1,0 +1,42 @@
+.section1
+{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: blue;
+}
+
+.place_container
+{
+    max-width: 900px;
+    display: flex;
+    gap: 20px;
+    background-color: #c9c9c9;
+    padding: 20px 20px;
+    align-items: center;
+}
+
+.place_image
+{
+    width: 200px;
+}
+
+.place_texts
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: green;
+    max-width: 800px;
+}
+
+.place_texts p
+{
+    color: black;
+}
+
+.place_name
+{
+    font-size: 20px;
+    font-weight: bold;
+}
