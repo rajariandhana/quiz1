@@ -1,0 +1,47 @@
+*
+{
+    /* color: red; */
+    /* color: black; */
+}
+
+.section1
+{
+    align-items: center;
+    color: black;
+    /* background-color: #B9A3E3; */
+    display: flex;
+    gap: 50px;
+    padding: 20 30;
+    border-radius: 40px;
+    max-width: 1000px;
+}
+
+.section1 img
+{
+    /* width: 50px; */
+    height: 250px;
+}
+
+.container
+{
+    color: black;
+    /* background-color: bisque; */
+    margin-bottom: 10px;
+}
+
+.section1 .container a
+{
+    color: black;
+    text-decoration: underline;
+}
+
+.section1 .container p
+{
+    color: black;
+}
+
+.section1 .container .key
+{
+    font-weight: bold;
+    font-size: 15px;
+}

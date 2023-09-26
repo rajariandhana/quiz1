@@ -1,46 +1,66 @@
-*
-{
-    /* color: red; */
-    /* color: black; */
-}
-
 .section1
 {
-    align-items: center;
-    color: black;
-    /* background-color: #B9A3E3; */
     display: flex;
-    gap: 50px;
-    padding: 20 30;
-    border-radius: 40px;
-    max-width: 1000px;
-}
-
-.section1 img
-{
-    /* width: 50px; */
-    height: 250px;
-}
-
-.container
-{
+    align-items: center;
+    justify-content: center;
     color: black;
+    /* background-color: purple; */
+    gap: 60px;
+}
+
+.s_left
+{
+    /* background-color: blue; */
+}
+
+.s_left img
+{
+    width: 200px;
+    object-fit: cover;
+    border-radius: 40px;
+    border: 5px solid #B9A3E3;
+}
+
+.s_right
+{
+    display: flex;
+    flex-direction: column;
+    /* background-color: red; */
+    gap: 20px;
+}
+
+.identities
+{
+    background-color: #B9A3E3;
+    padding: 20px 40px;
+    border-radius: 25px;
+}
+
+.socials
+{
+    /* background-color: azure; */
+    display: flex;
+    gap: 30px;
+}
+
+.socials img
+{
+    width: 50px;
+}
+
+.text_container
+{
+    color: aqua;
     /* background-color: bisque; */
     margin-bottom: 10px;
 }
 
-.section1 .container a
-{
-    color: black;
-    text-decoration: underline;
-}
-
-.section1 .container p
+.section1 .text_container p
 {
     color: black;
 }
 
-.section1 .container .key
+.section1 .text_container .key
 {
     font-weight: bold;
     font-size: 15px;

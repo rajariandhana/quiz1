@@ -7,17 +7,62 @@
 .section1
 {
     align-items: center;
-    color: black;
-    background-color: #B9A3E3;
+    justify-content: center;
+    /* background-color: aqua; */
     display: flex;
-    gap: 50px;
-    padding: 20 30;
-    border-radius: 40px;
-    max-width: 800px;
+    gap: 30px;
+    margin-bottom: 40px;
 }
 
-.section1 img
+.depok_container
 {
-    /* width: 50px; */
-    height: 250px;
+    
+}
+
+.depok_image
+{
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 40px;
+    border: 5px solid #B9A3E3;
+}
+
+.depok_image img
+{
+    
+}
+
+.section2
+{
+    align-items: center;
+    justify-content: center;
+    /* width: 500px; */
+    margin: 0 100px;
+    margin-bottom: 40px;
+    /* background-color: aqua; */
+}
+
+.section2 .desc
+{
+    color: #ffffff;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.section3
+{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.section3 a
+{
+    text-align: center;
+    background-color: #B9A3E3;
+    color: #000000;
+    padding: 10px 25px;
+    border-radius: 20px;
+
 }
