@@ -1,30 +1,18 @@
-const identities_keys =
+const identities_list =
 [
-    "Name",
-    "Education",
-    "Tech Stack"
+    ["Name", "Ralfazza Rajariandhana"],
+    ["Education", "Sepuluh Nopember Institute of Technology (ITS) | Informatics Engineering"],
+    ["Tech Stack", "C, C++, C#, Python, HTML, CSS, JavaScript"]
 ];
 
-const identities_values =
+const socials_list =
 [
-    "Ralfazza Rajariandhana",
-    "Sepuluh Nopember Institute of Technology (ITS) | Informatics Engineering",
-    "C, C++, C#, Python, HTML, CSS, JavaScript"
+    ["icon_github.png", "https://github.com/rajariandhana"],
+    ["icon_linkedin.png", "https://www.linkedin.com/in/rajariandhana"],
+    ["icon_instagram.png", "https://ww.instagram.com/rajariandhana"]
 ];
 
-const socials_icons =
-[
-    "icon_github.png",
-    "icon_linkedin.png",
-    "icon_instagram.png"
-];
-
-const socials_links =
-[
-    "https://github.com/rajariandhana",
-    "https://www.linkedin.com/in/rajariandhana",
-    "https://ww.instagram.com/rajariandhana"
-];
+const FolderName = "./Profile_Images/";
 
 const section2 = document.querySelector(".section1");
 const s_left = document.createElement("div");
@@ -36,42 +24,41 @@ identities.classList.add("identities");
 const socials = document.createElement("div");
 socials.classList.add("socials");
 
-
 section2.appendChild(s_left);
 section2.appendChild(s_right);
 s_right.appendChild(identities);
 s_right.appendChild(socials);
 
 const profilePicture = document.createElement("img");
-profilePicture.src = "Profile_Images/profpic-3.JPEG";
+profilePicture.src = FolderName + "profpic-3.JPEG";
 s_left.appendChild(profilePicture);
 
-for (let i = 0; i < identities_keys.length; i++)
+for (let i = 0; i < identities_list.length; i++)
 {
     const itemContainer = document.createElement("div");
     itemContainer.classList.add("text_container")
 
-    const keyElement = document.createElement("p");
-    keyElement.textContent = identities_keys[i];
-    keyElement.classList.add("key");
+    const type = document.createElement("p");
+    type.textContent = identities_list[i][0];
+    type.classList.add("type");
 
-    const valueElement = document.createElement("p");
-    valueElement.textContent = identities_values[i];
-    valueElement.classList.add("value");
+    const value = document.createElement("p");
+    value.textContent = identities_list[i][1];
+    value.classList.add("value");
 
-    itemContainer.appendChild(keyElement);
-    itemContainer.appendChild(valueElement);
+    itemContainer.appendChild(type);
+    itemContainer.appendChild(value);
 
     identities.append(itemContainer);
 }
 
-for(let i=0; i<socials_icons.length; i++)
+for(let i=0; i<socials_list.length; i++)
 {
-    const image = document.createElement("img");
-    image.src = "Profile_Images/" + socials_icons[i];
+    const itemContainer = document.createElement("img");
+    itemContainer.src = FolderName + socials_list[i][0];
     const linkElement = document.createElement("a");
     linkElement.target = "_blank";
-    linkElement.href = socials_links[i];
-    linkElement.appendChild(image);
+    linkElement.href = socials_list[i][1];
+    linkElement.appendChild(itemContainer);
     socials.appendChild(linkElement);
 }

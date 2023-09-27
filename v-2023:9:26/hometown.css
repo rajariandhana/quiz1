@@ -14,6 +14,11 @@
     margin-bottom: 40px;
 }
 
+.depok_container
+{
+    
+}
+
 .depok_image
 {
     width: 300px;
@@ -21,6 +26,11 @@
     object-fit: cover;
     border-radius: 40px;
     border: 5px solid #B9A3E3;
+}
+
+.depok_image img
+{
+    
 }
 
 .section2
@@ -54,4 +64,5 @@
     color: #000000;
     padding: 10px 25px;
     border-radius: 20px;
+
 }

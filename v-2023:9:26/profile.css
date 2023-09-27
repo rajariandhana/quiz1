@@ -8,6 +8,11 @@
     gap: 60px;
 }
 
+.s_left
+{
+    /* background-color: blue; */
+}
+
 .s_left img
 {
     width: 200px;
@@ -31,6 +36,18 @@
     border-radius: 25px;
 }
 
+.socials
+{
+    /* background-color: azure; */
+    display: flex;
+    gap: 30px;
+}
+
+.socials img
+{
+    width: 50px;
+}
+
 .text_container
 {
     color: aqua;
@@ -43,20 +60,8 @@
     color: black;
 }
 
-.section1 .text_container .type
+.section1 .text_container .key
 {
     font-weight: bold;
     font-size: 15px;
-}
-
-.socials
-{
-    /* background-color: azure; */
-    display: flex;
-    gap: 30px;
-}
-
-.socials img
-{
-    width: 50px;
 }
